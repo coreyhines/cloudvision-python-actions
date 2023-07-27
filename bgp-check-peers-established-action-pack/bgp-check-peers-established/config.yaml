@@ -1,0 +1,12 @@
+type: ACTION
+action-type: CHANGECONTROL_CUSTOM
+language: PYTHON_3
+name: BGP Check Peers Established
+description: Monitors CloudVision to ensure all BGP Peers are in Established state, else the Change Control will fail
+file: script.py
+static-params: []
+dynamic-params:
+  - name: DeviceID
+    description: The device whose BGP stats will be monitored.
+    required: true
+    hidden: false
